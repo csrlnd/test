@@ -1,0 +1,79 @@
+Mennyire ismert már a cégnél?
+Milyen szintü tool?
+Mire használható?
+Adat források?
+Automatizálási lehetőségek?
+Példa?
+
+
+
+Excel	-> Jól ismert, mindennapi használatban van
+	-> powerful tool, adatformázáshoz, kinyeréshez tökéletes
+	-> Önmagában is segíti a folyamatokat pl egy több százezres lista VLOOKUP-al,de önmagában lassú lehet ugyanazokat
+	   a folyamatokat kézzel ismételni
+	-> SAP riportok formájában érkezik az adat
+	-> Automatizálási lehetőségek: VBA később
+
+Access	-> Hasonló mint az excel, de kevésbé használt a cégnél
+	-> Ez a nagy adatok tárolására és kezelésére van optimailázlva
+	-> Itt tárolódik az adat pl egy Power BI Dashboard-hoz
+	-> Adatok rendszerezéséhez, lekérdezések tervezéséhez, szűréséhez tökéletes -> manuálisan lassú folyamat
+	-> Excel file-okon keresztül érkezik az adat
+	-> Automatizálási lehetőségek: VBA
+
+VBA	-> Ez is nagyon jól ismert, mindennapi használatban van
+	-> powerful tool, rengeteg időt lehet spórolni vele
+	-> Visual Basic programnyelven fogad parancsokat, Beállított folyamatokat ismétli makró formályában
+	-> Excel - Outlook kapcsolat révén automatikus levélküldés -> Email template-ek alkalmazása
+	-> Rengeteg email küldős makrót használunk, sok órányi munkát spórolva, Dashboard-okhoz, adat kinyeréshez
+VBA a "motor" ↑
+
+
+
+Workflow "motor" ↓
+SharePoint
+	->Jól ismert
+	-> Powerful tool
+	-> Nem is adat formázáshoz,kinyeréshez ,hanem a cégen belüli ügyintézésben :pl HR, Training-ek, Feedback-ek
+	-> Különböző site-ok létrehozása, adatok publikálása, sharepoint listákban tárolni az adatokat,
+	   de mindennapi munkához SharePoint-on tárolt fiel-ok,
+	   Workflow-k létrehozása, Costum from-ok készítése, approve folyamatok és email küldések automatizálása
+	-> Itt az adatforrás lehet SharePoint list, excel
+	-> SharePoint - Outlook kapcsolat miatt automatizált levelek, approve levelek, folyamatok
+	-> Workflow-k révén adat rögzítés, küldés rugalmasabb és felhasználó barátabb
+	-> Aktuális: HR site Training feedback és az Overtime tracker
+
+MS Teams -> Jól ismert
+	 -> Kevésbé hasznos tool-ok
+	 -> From kiküldés, esetleg approval küldés. Workflow-k használhatóak, de korlátozottak.
+	 -> Ezekre már vannak jobb megoldások ↑, pl SharePoint workflow-k és Outlook email-ek
+	 -> Automatizálási lehetőségek: időzített, esemény által kiváltott üzenet küldés
+
+Power Automate:
+
+	Workflow-ról részletesebben: -> Mindig van kiváltó esemény, 3 fő tipus: lehet Időzített pl minden nap, lehet esemény által kiváltott,
+		    			vagy manuálisan elindiított workflow pl gombnyomásra
+		    -> Esemény általi lehet: Email beérkezés, SharePoint lista szerkesztés, új file feltöltés
+		    -> Ez mindig kivált egy eseményt: Teams értesítés a csapatnak, válasz email, approve folyamat, adat áthelyezés
+		    -> SharePoint adat módosítás, szerkesztés, folyamat indítás,
+		       pl: Power BI automatikus befrissités ha az excel file szerkesztve van
+		    -> SharePoint-nak külön workflow-i vannak, de ugyanúgy használható Power Automate-tel
+
+	-> Új dolgonak számít nálunk
+	-> Powerful tool, a workflow események mögött ez az a tool ,ahol a workflow-k készülnek és összeköti az alkalmazásokat
+	-> Összeköthető: SharePoint, Excel, Power BI, Outlook
+
+Power Apps: -> Új dolognak számít
+	    -> Power Automate-et használo alkalmazás, személyre szabható
+	    -> Adat forrásként ugyanazokat használja mint a Power Automate: SharePoint, Power BI, Outlook
+	    -> Itt rendes alkalmazásokat lehet készíteni, használni lehet azokat a böngészőben. "SharePoint" tovább fejlesztve.
+	       De több automatizálási lehetőség, felhasználó barátabb eszközök. Valódibb a fejlesztés.
+	    -> Példa: Overtime tracker (Power App megnyitása)
+
+Azure:  -> Új dolog
+	-> Alkalmazásoknak biztosít felhő alapú erőforrást és tárhelyet
+	-> Kompatibilis a Power Apps-al, Ezzel a módszerrel nem csak böngészőből érhető el a Power app hanem telefonról letöltve is
+	-> Teljesértékű alkalmazás
+	-> Igazi fejlesztők használják, akik ezzel foglalkoznak -> valószínűleg az erőforrás & adatok már meg vannak
+	-> Fejlesztők között is "drága", persze cégen keresztül más díjszabás is lehet
+		 	
