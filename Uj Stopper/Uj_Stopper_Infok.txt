@@ -1,0 +1,21 @@
+Új Stopper infók
+
+- A Stopper.exe file mellett folyamatosan ott kell lennie egy másik file-nak, ami tartalmazza a Category-ákat és a Task-okat
+ (ez egy*.csv kiterjesztésű file, Excel által támogatott file típus).
+
+- A file-t ABC_Measurement_Tasks néven kell elmenteni és .csv kiterjesztéssel kell rendelkeznie, csak így érzékeli a stopper.
+
+- A példa file-ban is látható, hogy a fejlécek a kategóriák és az alatta lévő cellák az adott kategóriához tartozó feladatok.
+
+- .csv file úgy készíthető Excel-ben, hogy beírjuk a cellákba az adatokat és utána -> File -> Mentés másként -> File típusa
+  -> CSV(pontosvesszővel elválasztva)
+
+- A kiterjesztés miatt nem tartalmazhatnak a kategóriák nevei, illetve egyetlen feladat neve se pontosvesszőt(;)!
+
+- Két gombbal is lehet report-ot lekérni a stopperből. Az elsővel kiválasztott napra lehet visszamenőleg is, a másodikkal az összes
+  task, ami csak van a stopperben az egy file-ban lesz kiexportálva.
+
+- A file-ok jelszóval vannak levédve ez az összes esetben ez a jelszó oldja:QKARf5
+
+- Ha vége van a mérésnek vagy törölni kell az adatokat akkor az ABC_Measurement_Timer.abc file-t
+  ki lehet törölni. Ezután megnyitva a stoppert a mért task-ok eltünnek.
